@@ -1,0 +1,29 @@
+POST http://localhost:3000/regions
+Content-Type: application/json
+
+{
+    "regionName": "testregion",
+    "state": "MA"
+}
+
+###
+
+GET http://localhost:3000/regions
+
+###
+
+GET http://localhost:3000/regions/5
+
+###
+
+PUT http://localhost:3000/regions/5
+Content-Type: application/json
+
+{
+    "regionName": "testupdate",
+    "state": "MA"
+}
+
+###
+
+DELETE http://localhost:3000/regions/5

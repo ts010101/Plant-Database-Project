@@ -1,0 +1,37 @@
+POST http://localhost:3000/savedplants
+Content-Type: application/json
+
+{
+    "userID": "22",
+    "plantID": "4",
+    "dayHarvested": "2012-01-01",
+    "plantGrowthLevels": "4",
+    "flavorRate": "5",
+    "locationHarvested": "woods near Boston, MA"
+}
+
+###
+
+GET http://localhost:3000/savedplants/
+
+###
+
+GET http://localhost:3000/savedplants/22/4
+
+###
+
+PUT http://localhost:3000/savedplants/22/4
+Content-Type: application/json
+
+{
+    "userID": "22",
+    "plantID": "4",
+    "dayHarvested": "2012-03-03",
+    "plantGrowthLevels": "4",
+    "flavorRate": "5",
+    "locationHarvested": "woods near Boston, MA"
+}
+
+###
+
+DELETE http://localhost:3000/savedplants/22/4

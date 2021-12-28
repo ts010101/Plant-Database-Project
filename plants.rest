@@ -1,0 +1,33 @@
+POST http://localhost:3000/plants
+Content-Type: application/json
+
+{
+    "plantName": "testme",
+    "harvestSeasonStart": "0000-01-01",
+    "harvestSeasonEnd": "0101-01-02",
+    "flavorProfile": "testyum",
+    "eatenRaw": 0,
+    "howToCook": "however you want"
+}
+
+###
+
+GET http://localhost:3000/plants/3
+
+###
+
+PUT http://localhost:3000/plants/3
+Content-Type: application/json
+
+{
+    "plantName": "testupdate",
+    "harvestSeasonStart": "0000-01-01",
+    "harvestSeasonEnd": "0101-01-02",
+    "flavorProfile": "testupdate",
+    "eatenRaw": 0,
+    "howToCook": "however you want"
+}
+
+###
+
+DELETE http://localhost:3000/plants/3

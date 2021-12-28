@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body style="background-color: rgb(37, 175, 141)"></body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project.css">
+  <title>Add New Environmental Factor</title>
+</head>
+
+<body>
+  <script type="module" src="environs.js"></script>
+
+  <ul id="navbar">
+    <li class="navelement"><a href="/">Home</a></li>
+    <li class="navelement"><a href="/users.html">Users</a></li>
+    <li class="navelement"><a href="/saveduserplants.html">Collected Plants</a></li>
+    <li class="navelement"><a href="/addnewregion.html">Region</a></li>
+    <li class="navelement"><a href="/plants.html">Plants</a></li>
+    <li class="navelement"><a href="/environs.html">Environmental Factors</a></li>
+    <li class="navelement"><a href="/regionenviron.html">RegionEnviron</a></li>
+    <li class="navelement"><a href="/plantregionlist.html">Plant Region List</a></li>
+    <li class="navelement"><a href="/plantmonthlystate.html">Plant Monthly State </a></li>
+    <li class="navelement"><a href="/plantenvironimpacts.html">Plant Environmental Impacts </a></li>
+</ul>
+
+  <h1>Add New Environmental Factor</h1>
+  <form id="newEnvironForm">
+    <div>
+      <label for="environName">What is the name of this environmental factor?</label>
+      <input type="text" name="environName">
+    </div>
+    <div>
+      <label for="plantEffect">What effect does this usually have on plants?</label>
+      <input type="text" name="plantEffect">
+    </div>
+    <div>
+      <button type="submit">Add </button>
+    </div>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Effect</th>
+      </tr>
+    </thead>
+    <tbody id="allEnvironTable"></tbody>
+  </table>
+
+  <h1>Edit Enviromental Factor</h1>
+  <form id="editEnvironForm" name="editEnvironForm">
+    <div>
+      <select name="environID" id="editEnvironID">
+      </select>
+    </div>
+    <div>
+      <label for="environName">New Environment Name</label>
+      <input type="text" name="environName">
+    </div>
+    <div>
+      <label for="plantEffect">New Plant Effect</label>
+      <input type="text" name="plantEffect">
+    </div>
+    <div>
+      <button type="submit">Edit Environmental Factor</button>
+    </div>
+  </form>
+</body>
+
+</html>

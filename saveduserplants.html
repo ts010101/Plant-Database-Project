@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body style="background-color: rgb(135, 182, 154)">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="project.css">
+        <title>Add New Region</title>
+    </head>
+
+    <body>
+        <script type="module" src="saveduserplants.js"></script>
+
+        <ul id="navbar">
+            <li class="navelement"><a href="/">Home</a></li>
+            <li class="navelement"><a href="/users.html">Users</a></li>
+            <li class="navelement"><a href="/saveduserplants.html">Collected Plants</a></li>
+            <li class="navelement"><a href="/addnewregion.html">Region</a></li>
+            <li class="navelement"><a href="/plants.html">Plants</a></li>
+            <li class="navelement"><a href="/environs.html">Environmental Factors</a></li>
+            <li class="navelement"><a href="/regionenviron.html">RegionEnviron</a></li>
+            <li class="navelement"><a href="/plantregionlist.html">Plant Region List</a></li>
+            <li class="navelement"><a href="/plantmonthlystate.html">Plant Monthly State </a></li>
+            <li class="navelement"><a href="/plantenvironimpacts.html">Plant Environmental Impacts </a></li>
+        </ul>
+
+        <h1>Add New Saved User Plant</h1>
+        <form id="newUserPlantForm">
+            <div>
+                <label for="userID">User: </label>
+                <select name="userID" id="newUserPlantFromUserField">
+                </select>
+            </div>
+            <div>
+                <label for="plantID">Plant: </label>
+                <select name="plantID" id="newUserPlantFromPlantField">
+                </select>
+            </div>
+            <div>
+                <label for="dayHarvested">What day did you harvest?</label>
+                <input type="date" name="dayHarvested">
+            </div>
+            <div>
+                <label for="plantGrowthLevels">How abundant was the plant growth?</label>
+                <select name="plantGrowthLevels">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div>
+                <label for="flavorRate">How tasty was the plant?</label>
+                <select name="flavorRate">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div>
+                <label for="locationHarvested">What region was the plant harvested?</label>
+                <input type="text" name="locationHarvested">
+            </div>
+            <div>
+                <button type="submit">Save New User Plant</button>
+            </div>
+        </form>
+        <table id="savedUserPlantsTable"></table>
+        <form id="editSaveUserPlantForm"></form>
+    </body>
+
+</html>

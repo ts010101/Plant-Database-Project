@@ -1,0 +1,31 @@
+POST http://localhost:3000/plantenv
+Content-Type: application/json
+
+{
+    "plantID": "1",
+    "environID": "7",
+    "environImpact": "yellow leaves after extended period"
+}
+
+###
+
+GET http://localhost:3000/plantenv/
+
+###
+
+GET http://localhost:3000/plantenv/1/7
+
+###
+
+PUT http://localhost:3000/plantenv/1/7
+Content-Type: application/json
+
+{
+    "plantID": "1",
+    "environID": "7",
+    "environImpact": "update test"
+}
+
+###
+
+DELETE http://localhost:3000/plantenv/1/7

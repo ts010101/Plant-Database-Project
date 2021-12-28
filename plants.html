@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body style="background-color: rgb(105, 243, 162)"></body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Add New Plant</title>
+</head>
+
+<body>
+    <script type="module" src="plants.js"></script>
+    <ul id="navbar">
+        <li class="navelement"><a href="/">Home</a></li>
+        <li class="navelement"><a href="/users.html">Users</a></li>
+        <li class="navelement"><a href="/saveduserplants.html">Collected Plants</a></li>
+        <li class="navelement"><a href="/addnewregion.html">Region</a></li>
+        <li class="navelement"><a href="/plants.html">Plants</a></li>
+        <li class="navelement"><a href="/environs.html">Environmental Factors</a></li>
+        <li class="navelement"><a href="/regionenviron.html">RegionEnviron</a></li>
+        <li class="navelement"><a href="/plantregionlist.html">Plant Region List</a></li>
+        <li class="navelement"><a href="/plantmonthlystate.html">Plant Monthly State </a></li>
+        <li class="navelement"><a href="/plantenvironimpacts.html">Plant Environmental Impacts </a></li>
+    </ul>
+
+    <h1>Add New Plant</h1>
+    <form id="newPlantForm">
+        <div>
+            <label for="plantName">Plant Name: </label>
+            <input type="text" name="plantName" />
+        </div>
+        <div>
+            <label for="harvestSeasonStart">Harvest Season Start: </label>
+            <input type="date" name="harvestSeasonStart" />
+        </div>
+        <div>
+            <label for="harvestSeasonEnd">Harvest Season End: </label>
+            <input type="date" name="harvestSeasonEnd" />
+        </div>
+        <div>
+            <label for="flavorProfile">Flavor Profile: </label>
+            <input type="text" name="flavorProfile" />
+        </div>
+        <div>
+            <label for="howToCook">How to Cook: </label>
+            <input type="text" name="howToCook" />
+        </div>
+        <div>
+            <label for="eatenRaw">Eaten Raw: </label>
+            <input type="checkbox" name="eatenRaw" />
+        </div>
+        <div>
+            <button type="submit">Add New Plant</button>
+        </div>
+    </form>
+    <br />
+    <form id="searchPlantForm">
+        <input type="text" name="pattern"/>
+        <button type="submit">Search</button>
+    </form>
+    <table id="allPlantsTable"></table>
+    <form id="editPlantForm"></form>
+</body>
+
+</html>

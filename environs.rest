@@ -1,0 +1,29 @@
+POST http://localhost:3000/environs
+Content-Type: application/json
+
+{
+    "environName": "testrain",
+    "plantEffect": "testrainkillplant"
+}
+
+###
+
+GET http://localhost:3000/environs/
+
+###
+
+GET http://localhost:3000/environs/11
+
+###
+
+PUT http://localhost:3000/environs/12
+Content-Type: application/json
+
+{
+    "environName": "testupdate",
+    "plantEffect": "testupdateeffect"
+}
+
+###
+
+DELETE http://localhost:3000/environs/12

@@ -1,0 +1,29 @@
+POST http://localhost:3000/plantregion
+Content-Type: application/json
+
+{
+    "plantID": "1",
+    "regionID": "6"
+}
+
+###
+
+GET http://localhost:3000/plantregion/
+
+###
+
+GET http://localhost:3000/plantregion/1/6
+
+###
+
+PUT http://localhost:3000/plantregion/1/6
+Content-Type: application/json
+
+{
+    "plantID": "1",
+    "regionID": "9"
+}
+
+###
+
+DELETE http://localhost:3000/plantregion/1/9

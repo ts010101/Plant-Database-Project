@@ -1,0 +1,31 @@
+POST http://localhost:3000/plantmonthly
+Content-Type: application/json
+
+{
+    "plantID": "1",
+    "monthID": "3",
+    "harvestReady": "true, but subprime"
+}
+
+###
+
+GET http://localhost:3000/plantmonthly
+
+###
+
+GET http://localhost:3000/plantmonthly/1/8
+
+###
+
+PUT http://localhost:3000/plantmonthly/1/3
+Content-Type: application/json
+
+{
+    "plantID": "1",
+    "monthID": "3",
+    "harvestReady": "false"
+}
+
+###
+
+DELETE http://localhost:3000/plantmonthly/1/9

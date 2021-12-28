@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body style="background-color: rgb(114, 139, 123)">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Add New Plant Environmental Impact</title>
+  </head>
+
+  <body>
+    <script type="module" src="plantenvironimpacts.js"></script>
+
+    <ul id="navbar">
+      <li class="navelement"><a href="/">Home</a></li>
+      <li class="navelement"><a href="/users.html">Users</a></li>
+      <li class="navelement"><a href="/saveduserplants.html">Collected Plants</a></li>
+      <li class="navelement"><a href="/addnewregion.html">Region</a></li>
+      <li class="navelement"><a href="/plants.html">Plants</a></li>
+      <li class="navelement"><a href="/environs.html">Environmental Factors</a></li>
+      <li class="navelement"><a href="/regionenviron.html">RegionEnviron</a></li>
+      <li class="navelement"><a href="/plantregionlist.html">Plant Region List</a></li>
+      <li class="navelement"><a href="/plantmonthlystate.html">Plant Monthly State </a></li>
+      <li class="navelement"><a href="/plantenvironimpacts.html">Plant Environmental Impacts </a></li>
+    </ul>
+
+    <h1>Add New Plant Environmental Impact</h1>
+    <form id="newEnvironPlantForm">
+      <div>
+        <label for="environID">Environment: </label>
+        <select name="environID" id="newEnvPlantEnvironField">
+        </select>
+      </div>
+      <div>
+        <label for="plantID">Plant: </label>
+        <select name="plantID" id="newEnvPlantPlantField">
+        </select>
+      </div>
+      <div>
+        <label for="plantID">Impact: </label>
+        <input type="text" name="environImpact" />
+      </div>
+      <div>
+        <button type="submit">Save </button>
+      </div>
+    </form>
+    <table id="envPlantTable"></table>
+    <form id="editEnvironPlantForm"></form>
+
+</html>

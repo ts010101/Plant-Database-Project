@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body style="background-color: rgb(69, 95, 78)">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Add New Plant Month List</title>
+  </head>
+
+  <body>
+    <script type="module" src="plantmonthlystate.js"></script>
+
+    <ul id="navbar">
+        <li class="navelement"><a href="/">Home</a></li>
+        <li class="navelement"><a href="/users.html">Users</a></li>
+        <li class="navelement"><a href="/saveduserplants.html">Collected Plants</a></li>
+        <li class="navelement"><a href="/addnewregion.html">Region</a></li>
+        <li class="navelement"><a href="/plants.html">Plants</a></li>
+        <li class="navelement"><a href="/environs.html">Environmental Factors</a></li>
+        <li class="navelement"><a href="/regionenviron.html">RegionEnviron</a></li>
+        <li class="navelement"><a href="/plantregionlist.html">Plant Region List</a></li>
+        <li class="navelement"><a href="/plantmonthlystate.html">Plant Monthly State </a></li>
+        <li class="navelement"><a href="/plantenvironimpacts.html">Plant Environmental Impacts </a></li>
+    </ul>
+
+    <h1>Add New Plant Monthly State</h1>
+    <form id="newMonthPlantForm">
+        <div>
+            <label for="monthID">Month: </label>
+            <select name="monthID" id="newRegPlantMonthField">
+            </select>
+        </div>
+        <div>
+            <label for="plantID">Plant: </label>
+            <select name="plantID" id="newRegPlantPlantField">
+            </select>
+        </div>
+        <div>
+            <label for="harvestReady">Harvest Ready: </label>
+            <select name="harvestReady">
+                <option value="true">true</option>
+                <option value="false">false</option>
+                <option value="true, but subprime">true, but subprime</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Save </button>
+        </div>
+    </form>
+    <table id="monthPlantTable"></table>
+    <form id="editMonthPlantForm"></form>
+</html>
